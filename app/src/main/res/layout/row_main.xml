@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="wrap_content"
     >
 
     <ImageView
         android:id="@+id/imgRow"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="300dp"
         android:scaleType="centerCrop"
         android:src="@mipmap/ic_launcher"/>
     <TextView
@@ -18,7 +17,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:background="#3a7e72"
+        android:background="#c6000000"
         android:textColor="#ffffff"
-        android:text="title"/>
-</LinearLayout>
+        android:text="title"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_gravity="bottom"/>
+</FrameLayout>
